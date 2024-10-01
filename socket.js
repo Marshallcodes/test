@@ -6,7 +6,7 @@ const { Server } = require("socket.io");
 const app = express();
 const server = http.createServer(app);
 
-// Heroku에서는 환경 변수로 포트가 제공됩니다.
+// Render에서는 환경 변수로 포트가 제공됩니다.
 const PORT = process.env.PORT || 5000;
 
 const io = new Server(server, {
